@@ -1,0 +1,173 @@
+
+/* Media Query For Tablet */
+@media only screen and (max-width: 1000px) {
+	/* header */
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End of Header */
+	/* Hero */
+	#main h1 {
+		font-size: 7rem;
+	}
+	/* End Hero */
+
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	
+	/* End Project */
+
+	
+}
+/* End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1001px) {
+	/* header */
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
+/* End  Media Query For Desktop */
+
+/* Media Query for smartphone */
+@media only screen and (max-width: 670px) {
+/* Header */
+	.brand h1 {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: white;
+	}
+	.brand h1 span {
+		color: crimson;
+	}
+		#header .nav-list ul a
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+	/* End of Header */
+
+	
+/* Main */
+	#main h1 {
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards; /* text reveal susuia selektor keyframe kode dibawah*/
+	animation-delay: 1s; /* delay untuk memunculkan teks pada id main tag h1 pas di refresh deya 1s baru muncul teksnya */
+	}
+
+	.tombol {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid rgb(0, 235, 70);
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	margin-top: 20px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+
+
+/* services */
+	#services .service-bottom .service-item {
+		flex-basis: 80%;
+		margin: 1.5%;
+	}
+	#services .service-top p
+	{
+		font-size: 1rem;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.section-title {
+		font-size: 36px;
+		font-weight: 300;
+		color: black;
+		text-transform: uppercase;
+		letter-spacing: 3.2px;
+		text-align: center;
+	}
+	/* end of services */
+
+	/* Profile */
+	.txt-contents
+	{
+		font-size: 1rem;
+	}
+	/* End of Profile */
+	/* footer */
+	footer #contact-us
+	{
+		text-align: center;
+		height: 300px;
+	}
+	footer .btn-wrapper	
+	{
+		margin: 0 auto;
+	}
+	footer .btn
+	{
+		margin: 30px auto;
+	}
+	.this-project
+	{
+		padding-top:0;
+	}
+
+	.follow-us
+	{
+		font-size:3rem;
+	}
+	/* end of footer */
+}

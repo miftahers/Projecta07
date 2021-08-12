@@ -1,0 +1,103 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	/* vh yaitu viewport height dimana height tdk dpt ditentukan dalam persen, jadi 100vh = 100 % height. okee  */
+	min-height: 100vh;
+	width: 100%;
+	display: flex;  /* seperti yg dipelajari di latihan progratee */
+	align-items: center;
+	justify-content: center;
+}
+img {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+}
+p {
+	color: black;
+	font-size: 16px;
+	margin-top: 5px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+}
+.section-title {
+	font-size: 56px;
+	font-weight: 300;
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 3.2px;
+	text-align: center;
+}
+.section-title span {
+	color: crimson;
+}
+.tombol {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+	border: 2px solid rgb(0, 235, 70);
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+}
+.tombol:hover {
+	color: white;
+	background-color: rgb(8, 179, 59);
+}
+
+
+
+
+
+
+
+/* Keyframes */
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: crimson;
+		font-weight: 500;
+	}
+}
+/* End Keyframes */

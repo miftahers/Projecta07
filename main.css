@@ -1,0 +1,69 @@
+/* Hero Section */
+#main {
+	background-image: url(2.jpg);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+#main::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity: 0.7;
+	z-index: -1;
+}
+#main .main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#main h1 {
+	display: block;
+	width: fit-content;
+	font-size: 60px;
+	position: relative;
+	color: transparent;
+	animation: text_reveal 0.5s ease forwards; /* text reveal susuia selektor keyframe kode dibawah*/
+	animation-delay: 1s; /* delay untuk memunculkan teks pada id main tag h1 pas di refresh deya 1s baru muncul teksnya */
+}
+
+/* h1:nth-child adalah memberikan spesifik baground karena code dibawah gak ada bg-color maka warna nya gak ada cuma 
+dikasih delay aja buat hurufnya nanti muncul berpa detik ini buat animasi   */
+#main h1:nth-child(1) {
+	animation-delay: 1s; /* delay muncul huruf*/
+}
+#main h1:nth-child(2) {
+	animation-delay: 2s;
+}
+#main h1:nth-child(3) {
+	animation: text_reveal_name 0.5s ease forwards; 
+	animation-delay: 3s;
+}
+#main h1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background-color: crimson;
+	animation: text_reveal_box 1s ease;
+	animation-delay: 0.5s;
+}
+/* ini untuk span kosong*/
+#main h1:nth-child(1) span {
+	animation-delay: 0.5s;
+}
+#main h1:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+#main h1:nth-child(3) span {
+	animation-delay: 2.5s;
+}
+
+/* End Hero Section */
